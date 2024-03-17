@@ -77,12 +77,12 @@ To run the test suite for the project, follow these steps:
 
 3. Install the necessary dependencies. If you haven't already installed `pytest`, you can do so using pip:
 
-pip install pytest
+`pip install pytest`
 
 
 4. Once the dependencies are installed, run the test suite by executing the following command:
 
-pytest test_project.py
+`pytest test_project.py`
 
 
 5. After running the tests, pytest will display the results along with any failures or errors encountered during the test execution.
