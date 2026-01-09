@@ -8,20 +8,20 @@
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-- **🎮 Interactive Game Mode**: Play randomly generated Sudoku puzzles with real-time input validation.
-- **⚡ Automated Backtracking Solver**: A technically sophisticated solver that finds solutions for complex puzzles using recursive backtracking.
-- **🛠️ Dynamic Board Generation**: Generates valid Sudoku boards and removes cells to create unique puzzles.
-- **🔍 Input Validation**: Robust error handling for user inputs to ensure a seamless experience.
-- **🧪 Comprehensive Testing**: Includes a full test suite powered by `pytest` for ensuring algorithm reliability.
+- **Interactive Game Mode**: Play randomly generated Sudoku puzzles with real-time input validation.
+- **Automated Backtracking Solver**: A technically sophisticated solver that finds solutions for complex puzzles using recursive backtracking.
+- **Dynamic Board Generation**: Generates valid Sudoku boards and removes cells to create unique puzzles.
+- **Input Validation**: Robust error handling for user inputs to ensure a seamless experience.
+- **Comprehensive Testing**: Includes a full test suite powered by `pytest` for ensuring algorithm reliability.
 
 ---
 
 ## 🛠️ Technical Architecture
 
-### 🧠 The Backtracking Algorithm
-The core of the solver is a recursive backtracking algorithm. It works by:
+### The Backtracking Algorithm
+The core of the solver is a **recursive** backtracking algorithm. It works by:
 1. Identifying the next empty cell on the board.
 2. Attempting to place digits 1 through 9.
 3. Checking if the placement is valid (row, column, and 3x3 subgrid checks).
@@ -30,7 +30,7 @@ The core of the solver is a recursive backtracking algorithm. It works by:
 
 This approach ensures that we explore the search space efficiently while finding the correct solution if it exists.
 
-### 🏗️ File Structure
+### File Structure
 - `project.py`: The entry point of the application containing the game logic and solver.
 - `test_project.py`: Contains automated tests for verifying key functions.
 - `requirements.txt`: External dependencies required for the project.
@@ -45,8 +45,8 @@ This approach ensures that we explore the search space efficiently while finding
 ### 📥 Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Project_SudokuApp.git
-   cd Project_SudokuApp
+   git clone https://github.com/Zer0-Bug/SudokuApp.git
+   cd SudokuApp
    ```
 2. Install dependencies:
    ```bash
@@ -79,7 +79,7 @@ pytest test_project.py
 
 ---
 
-## 🤝 Contribution
+## Contribution
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -91,12 +91,12 @@ Contributions are what make the open-source community such an amazing place to l
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ---
 
 <p align="center">
-  Developed with ❤️ by the SudokuApp Team
+  ∞
 </p>
