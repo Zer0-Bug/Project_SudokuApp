@@ -37,7 +37,7 @@ This approach ensures that we explore the search space efficiently while finding
 
 ---
 
-## 💻 Installation & Usage
+## Installation & Usage
 
 ### Prerequisites
 - Python 3.8 or higher.
@@ -61,7 +61,7 @@ python project.py
 
 ---
 
-## 🧪 Testing
+## Testing
 
 We believe in code quality. The project uses `pytest` for unit testing the core logic.
 
