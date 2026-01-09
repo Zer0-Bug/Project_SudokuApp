@@ -81,13 +81,20 @@ pytest test_project.py
 
 ## Contribution
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are always appreciated. Open-source projects grow through collaboration, and any improvement—whether a bug fix, new feature, documentation update, or suggestion—is valuable.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+To contribute, please follow the steps below:
+
+1. Fork the repository.
+2. Create a new branch for your change:  
+   `git checkout -b feature/your-feature-name`
+3. Commit your changes with a clear and descriptive message:  
+   `git commit -m "Add: brief description of the change"`
+4. Push your branch to your fork:  
+   `git push origin feature/your-feature-name`
+5. Open a Pull Request describing the changes made.
+
+All contributions are reviewed before being merged. Please ensure that your changes follow the existing code style and include relevant documentation or tests where applicable.
 
 ---
 
