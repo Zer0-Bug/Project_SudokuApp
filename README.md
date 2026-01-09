@@ -1,9 +1,8 @@
 # 🧩 SudokuApp: A High-Performance Solver & Interactive Game
-<p align="center">
-   ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue?style=for-the-badge&logo=python)
-   ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
-   ![Testing](https://img.shields.io/badge/tests-pytest-yellow?style=for-the-badge&logo=pytest)
-</p>
+
+![Python Version](https://img.shields.io/badge/python-3.8%2B-darkgreen?style=for-the-badge&logo=python)
+![License](https://img.shields.io/badge/license-MIT-darkgreen?style=for-the-badge)
+![Testing](https://img.shields.io/badge/tests-pytest-darkgreen?style=for-the-badge&logo=pytest)
 
 **SudokuApp** is a robust Python-based application designed for both enthusiasts who love to play Sudoku and developers interested in algorithmic puzzle solving. It features a complete interactive game engine and a powerful backtracking-based solver capable of solving any valid 9x9 Sudoku puzzle.
 
