@@ -18,7 +18,7 @@
 
 ---
 
-## 🛠️ Technical Architecture
+## Technical Architecture
 
 ### The Backtracking Algorithm
 The core of the solver is a **recursive** backtracking algorithm. It works by:
@@ -39,10 +39,10 @@ This approach ensures that we explore the search space efficiently while finding
 
 ## 💻 Installation & Usage
 
-### ⚙️ Prerequisites
+### Prerequisites
 - Python 3.8 or higher.
 
-### 📥 Setup
+### Setup
 1. Clone the repository:
    ```bash
    git clone https://github.com/Zer0-Bug/SudokuApp.git
@@ -53,7 +53,7 @@ This approach ensures that we explore the search space efficiently while finding
    pip install -r requirements.txt
    ```
 
-### 🎮 Running the App
+### Running the App
 Start the main script to interact with the game menu:
 ```bash
 python project.py
