@@ -46,9 +46,14 @@ This approach ensures that we explore the search space efficiently while finding
 1. Clone the repository:
    ```bash
    git clone https://github.com/Zer0-Bug/SudokuApp.git
+   ```
+
+2. Go to the folder:
+   ```bash
    cd SudokuApp
    ```
-2. Install dependencies:
+   
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
@@ -63,9 +68,7 @@ python project.py
 
 ## Testing
 
-We believe in code quality. The project uses `pytest` for unit testing the core logic.
-
-To run the tests:
+The project uses `pytest` for unit testing the core logic. To run the tests:
 ```bash
 pytest test_project.py
 ```
