@@ -121,6 +121,8 @@ git clone https://github.com/Zer0-Bug/SudokuApp.git
 Install the necessary dependencies to run tests and the application:
 ```bash
 cd SudokuApp
+```
+```bash
 pip install -r requirements.txt
 ```
 
