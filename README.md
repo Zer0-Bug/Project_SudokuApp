@@ -171,3 +171,7 @@ All contributions are reviewed before being merged. Please ensure that your chan
 </p>
 
 ---
+
+<p align="center" style="margin-top:10px; letter-spacing:4px;">
+  ∞
+</p>
