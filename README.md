@@ -1,92 +1,146 @@
-# 🧩 SudokuApp: A High-Performance Solver & Interactive Game
+<h1 align="center">SudokuApp</h1>
 
-![Python Version](https://img.shields.io/badge/python-3.8%2B-darkgreen?style=for-the-badge&logo=python)
-![License](https://img.shields.io/badge/license-MIT-darkgreen?style=for-the-badge)
-![Testing](https://img.shields.io/badge/tests-pytest-darkgreen?style=for-the-badge&logo=pytest)
+<p align="center">
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  </a>
+  <a href="https://docs.pytest.org/">
+    <img src="https://img.shields.io/badge/Testing-Pytest-yellowgreen?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-darkred?style=for-the-badge" alt="License">
+  </a>
+</p>
 
-**SudokuApp** is a robust Python-based application designed for both enthusiasts who love to play Sudoku and developers interested in algorithmic puzzle solving. It features a complete interactive game engine and a powerful backtracking-based solver capable of solving any valid 9x9 Sudoku puzzle.
+<p align="center">
+  <b>A high-performance Sudoku engine featuring an interactive game and an automated solver.</b><br><br>
+  <i>Leveraging recursive backtracking for efficient puzzle solving and a robust terminal-based interface for gameplay.</i>
+</p>
+<br>
+<p align="center">
+  <a href="#technical-architecture">
+    <img src="https://img.shields.io/badge/Architecture-222222?style=flat" />
+  </a>
+  <span> ° </span>
+  <a href="#project-structure">
+    <img src="https://img.shields.io/badge/Structure-222222?style=flat" />
+  </a>
+  <span> ° </span>
+  <a href="#key-features">
+    <img src="https://img.shields.io/badge/Features-222222?style=flat" />
+  </a>
+  <span> ° </span>
+  <a href="#technical-specifications">
+    <img src="https://img.shields.io/badge/Specs-222222?style=flat" />
+  </a>
+  <span> ° </span>
+  <a href="#deployment--installation">
+    <img src="https://img.shields.io/badge/Deploy-222222?style=flat" />
+  </a>
+</p>
 
 ---
+<br>
+<h2 align="center">Technical Architecture</h2>
 
-## Key Features
+The application is architected to balance algorithmic efficiency with user interactivity. At its core, it implements a **Constraint Satisfaction** approach to Sudoku solving:
 
-- **Interactive Game Mode**: Play randomly generated Sudoku puzzles with real-time input validation.
-- **Automated Backtracking Solver**: A technically sophisticated solver that finds solutions for complex puzzles using recursive backtracking.
-- **Dynamic Board Generation**: Generates valid Sudoku boards and removes cells to create unique puzzles.
-- **Input Validation**: Robust error handling for user inputs to ensure a seamless experience.
-- **Comprehensive Testing**: Includes a full test suite powered by `pytest` for ensuring algorithm reliability.
-
----
-
-## Technical Architecture
-
-### The Backtracking Algorithm
-The core of the solver is a **recursive** backtracking algorithm. It works by:
-1. Identifying the next empty cell on the board.
-2. Attempting to place digits 1 through 9.
-3. Checking if the placement is valid (row, column, and 3x3 subgrid checks).
-4. Recursively calling itself to solve the remaining board.
-5. Backtracking if a contradiction is found.
-
-This approach ensures that we explore the search space efficiently while finding the correct solution if it exists.
-
-### File Structure
-- `project.py`: The entry point of the application containing the game logic and solver.
-- `test_project.py`: Contains automated tests for verifying key functions.
-- `requirements.txt`: External dependencies required for the project.
+1.  **Backtracking Solver:** A recursive algorithm that explores the search space by placing digits and pruning branches as soon as a constraint (Row, Column, or 3x3 Box) is violated.
+2.  **Board Generation:** Utilizes a randomized filling strategy followed by a cell-removal process to generate unique puzzles with varying difficulty.
+3.  **State Management:** The board is maintained as a 2D matrix (list of lists) with real-time validation checks during both manual play and automated solving.
+4.  **Terminal Interface:** Uses Python's standard I/O for a lightweight, dependency-free command-line experience.
 
 ---
+<br>
+<h2 align="center">Project Structure</h2>
 
-## Installation & Usage
+```
+SudokuApp/
+├── project.py                                # Main orchestrator and core logic
+├── test_project.py                          # Automated test suite using pytest
+├── requirements.txt                          # Python dependencies manifest
+├── LICENSE                                   # MIT License terms
+├── README.md                                 # Project documentation
+│
+└── .git/                                     # Version control repository
+```
 
-### Prerequisites
-- Python 3.8 or higher.
+---
+<br>
+<h2 align="center">Key Features</h2>
 
-### Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Zer0-Bug/SudokuApp.git
-   ```
+### 1. Interactive Game Mode
+Experience Sudoku directly in your terminal. The game mode provides:
+- **Puzzle Generation:** Dynamic creation of 9x9 Sudoku boards.
+- **Real-Time Validation:** Immediate feedback on invalid placements.
+- **Completion Check:** Automated verification of the final solution.
 
-2. Go to the folder:
-   ```bash
-   cd SudokuApp
-   ```
-   
-4. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 2. Automated Backtracking Solver
+Solve any valid 9x9 Sudoku puzzle instantly.
+- **Heuristic Exploration:** Efficiently finds solutions using recursive depth-first search.
+- **Consistency Checking:** Ensures the input board is valid before attempting a solution.
 
-### Running the App
-Start the main script to interact with the game menu:
+---
+<br>
+<h2 align="center">Technical Specifications</h2>
+
+<table align="center">
+  <tr>
+    <th align="center">Aspect</th>
+    <th align="center">Details</th>
+  </tr>
+  <tr>
+    <td align="center">Language</td>
+    <td align="center">Python 3.8+</td>
+  </tr>
+  <tr>
+    <td align="center">Solving Algorithm</td>
+    <td align="center">Recursive Backtracking (DFS)</td>
+  </tr>
+  <tr>
+    <td align="center">Testing Framework</td>
+    <td align="center">Pytest</td>
+  </tr>
+  <tr>
+    <td align="center">Board Generation</td>
+    <td align="center">Randomized Filling + Cell Removal</td>
+  </tr>
+</table>
+
+---
+<br>
+<h2 align="center">Deployment & Installation</h2>
+
+### 1. Repository Acquisition
+Obtain a local copy of the repository:
+```bash
+git clone https://github.com/Zer0-Bug/SudokuApp.git
+```
+
+### 2. Environment Setup
+Install the necessary dependencies to run tests and the application:
+```bash
+cd SudokuApp
+pip install -r requirements.txt
+```
+
+### 3. Running the Application
+Launch the interactive menu to start playing or solving:
 ```bash
 python project.py
 ```
 
----
-
-## Testing
-
-The project uses `pytest` for unit testing the core logic. To run the tests:
+### 4. Running Tests
+Execute the test suite to verify algorithm integrity:
 ```bash
 pytest test_project.py
 ```
 
-### Verified Functions:
-| Function | Description | Status |
-| :--- | :--- | :--- |
-| `fill_board` | Board generation logic | ✅ Passed |
-| `remove_cells` | Puzzle creation complexity | ✅ Passed |
-| `solve_sudoku` | Algorithm correctness | ✅ Passed |
-
 ---
+<br>
+<h2 align="center">Contribution</h2>
 
-## Contribution
-
-Contributions are always appreciated. Open-source projects grow through collaboration, and any improvement—whether a bug fix, new feature, documentation update, or suggestion—is valuable.
-
-To contribute, please follow the steps below:
+Contributions are welcome! If you have suggestions for performance improvements or new features, feel free to contribute:
 
 1. Fork the repository.
 2. Create a new branch for your change:  
@@ -101,12 +155,17 @@ All contributions are reviewed before being merged. Please ensure that your chan
 
 ---
 
-## License
-
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+<br>
+<p align="center">
+  <a href="mailto:777eerol.exe@gmail.com">
+    <img src="https://cdn.simpleicons.org/gmail/D14836" width="40" alt="Email">
+  </a>
+  <span> × </span>
+  <a href="https://www.linkedin.com/in/eerolexe/">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+         width="40"
+         alt="LinkedIn">
+  </a>
+</p>
 
 ---
-
-<p align="center">
-  ∞
-</p>
